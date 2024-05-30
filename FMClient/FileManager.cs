@@ -123,7 +123,7 @@ public partial class FileManager : Form
             {
                 _backHistory.Push(_currentPath);
                 _forwardHistory.Clear();
-                await FillListView(_currentPath + fileView.SelectedItems[0].Text + "/").ConfigureAwait(false);
+                await FillListView(_currentPath + "/" + fileView.SelectedItems[0].Text + "/").ConfigureAwait(false);
             }
         }
     }
