@@ -33,7 +33,7 @@ public partial class FileManager : Form
         FillListView("/").Wait();
     }
         
-    // Отоюражение файлов и папок
+    // Отображение файлов и папок
     private async Task FillListView(string path)
     {
         var response = await _client.GetFiles(path).ConfigureAwait(false);
@@ -169,7 +169,6 @@ public partial class FileManager : Form
     {
         if (fileView.SelectedItems.Count == 1)
         {
-            var a = _currentPath + fileView.SelectedItems[0].Text;
             await _client.DeleteObject(_currentPath + "/" + fileView.SelectedItems[0].Text).ConfigureAwait(false);
             await FillListView(_currentPath).ConfigureAwait(false);
         }

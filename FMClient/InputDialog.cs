@@ -26,7 +26,6 @@ public partial class InputDialog : Form
         Close();
     }
 
-
     private void InputDialog_KeyPress(object sender, KeyPressEventArgs e)
     {
         if (e.KeyChar == (char) Keys.Enter)
