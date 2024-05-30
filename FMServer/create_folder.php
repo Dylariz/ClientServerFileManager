@@ -20,7 +20,7 @@ function create_folder($path) {
     }
 }
 
-// Пример использования: http://localhost:3000/Server/create_folder.php?path=/test1/new_folder/
+// Пример использования: http://localhost:3000/create_folder.php?path=/test1/new_folder/
 if (!isset($_GET['path'])) {
     http_response_code(400); // Устанавливаем код 400 Bad Request
     echo "400 Bad Request: Не указан путь для создания";

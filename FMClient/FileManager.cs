@@ -7,7 +7,7 @@ namespace FMClient;
 
 public partial class FileManager : Form
 {
-    private const string ServerUrl = "http://localhost:3000/FMServer/";
+    private const string ServerUrl = "http://localhost:3000/";
         
     private Client _client;
     private string _currentPath = "/";

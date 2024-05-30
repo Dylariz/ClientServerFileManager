@@ -48,7 +48,7 @@ function format_bytes($bytes) {
     return round($bytes, 2) . ' ' . $units[$index];
 }
 
-// Пример: http://localhost:3000/Server/get_folder_json.php?path=/test1/
+// Пример: http://localhost:3000/get_folder_json.php?path=/test1/
 if (!isset($_GET['path'])) {
     http_response_code(400); // Устанавливаем код 400 Bad Request
     echo "400 Bad Request: Не указан путь для чтения";

@@ -15,7 +15,7 @@ function download_file($path) {
     readfile($fullPath);
 }
 
-// Пример использования: http://localhost:3000/Server/download_file.php?path=/test1/myfile.txt
+// Пример использования: http://localhost:3000/download_file.php?path=/test1/myfile.txt
 if (!isset($_GET['path'])) {
     http_response_code(400); // Устанавливаем код 400 Bad Request: Не указан путь для загрузки
     return;

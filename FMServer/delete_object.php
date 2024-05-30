@@ -47,7 +47,7 @@ function recoursive_delete($path) {
     return rmdir($path);
 }
 
-// Пример использования: http://localhost:3000/Server/delete_object.php?path=/test1/
+// Пример использования: http://localhost:3000/delete_object.php?path=/test1/
 if (!isset($_GET['path'])) {
     http_response_code(400); // Устанавливаем код 400 Bad Request
     echo "Не указан путь для удаления";

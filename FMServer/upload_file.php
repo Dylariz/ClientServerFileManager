@@ -25,7 +25,7 @@ function upload_file($path, $fileData) {
     }
 }
 
-// Пример использования: Начать потоковую загрузку на http://localhost:3000/Server/upload_file.php
+// Пример использования: Начать потоковую загрузку на http://localhost:3000/upload_file.php
 if (!isset($_POST['path'])) {
     http_response_code(400); // Устанавливаем код 400 Bad Request
     echo "400 Bad Request: Не указан путь для загрузки";
